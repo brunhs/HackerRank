@@ -1,0 +1,1 @@
+SELECT ROUND(AVG(Salary) - AVG(CAST(REPLACE(Salary, 0, '') AS int)))+1 FROM EMPLOYEES;
